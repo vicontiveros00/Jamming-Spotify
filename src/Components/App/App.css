@@ -50,3 +50,11 @@ h2 {
     flex-direction: column;
   }
 }
+
+.watermark {
+  text-align: center;
+  padding: 10px;
+  background-color: #010c3f;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+}

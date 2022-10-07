@@ -1,5 +1,5 @@
 let accessToken;
-const clientID = '';
+const clientID = ''; //spotify api key goes here
 const redirectURI = 'http://localhost:3000/';
 const url = 'https://api.spotify.com/v1/';
 
