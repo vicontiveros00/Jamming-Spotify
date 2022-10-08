@@ -1,6 +1,6 @@
 # ♫ Jammming Playlist Maker ♫
 
-Live version here: https://jammmingvic.surge.sh/
+Live version here: https://jammmingvic.surge.sh/<br>
 If you're tired of Spotify's UI you can use this handy little react web-app to quickly search Spotify's library of music and create a playlist to your own Spotify account.
 
 ## This app interacts with Spotify's API.
