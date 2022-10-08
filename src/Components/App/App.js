@@ -14,11 +14,13 @@ class App extends React.Component {
       playlistName: 'My Playlist',
       playlistTracks: []
     }
+
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
     this.search = this.search.bind(this);
+    this.updateSearchResults = this.updateSearchResults.bind(this);
   }
 
   addTrack(track) {
@@ -26,16 +28,36 @@ class App extends React.Component {
       return;
     } else {
       let trackList = this.state.playlistTracks;
+      track.active = true;
       trackList.push(track);
       this.setState({
-        playlistTracks: trackList
+        playlistTracks: trackList,
       })
+      this.updateSearchResults();
     }
   }
 
+  updateSearchResults() {
+    let notActiveSongs = this.state.searchResults;
+    let activeSongs = notActiveSongs.filter(track => !track.active);
+
+    this.setState({
+      searchResults: activeSongs
+    })
+  }
+
   removeTrack(track) {
+    track.active = false;
+    let activeSong = track;
+    let notActiveSongs = this.state.searchResults;
+    notActiveSongs.unshift(activeSong);
+    this.setState({
+      searchResults: notActiveSongs
+    });
+    
     let removeSong = this.state.playlistTracks;
     removeSong = removeSong.filter(song => song.id !== track.id);
+
     this.setState({
       playlistTracks: removeSong
     })

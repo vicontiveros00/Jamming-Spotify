@@ -1,6 +1,6 @@
 let accessToken;
 const clientID = ''; //spotify api key goes here
-const redirectURI = 'http://localhost:3000/';
+const redirectURI = 'https://jammmingvic.surge.sh/'
 const url = 'https://api.spotify.com/v1/';
 
 
@@ -38,7 +38,8 @@ const Spotify = {
                 name: track.name,
                 artist: track.artists[0].name,
                 album: track.album.name,
-                uri: track.uri
+                uri: track.uri,
+                active: false //removes song from search results if true
              }))   
             }) 
     },
