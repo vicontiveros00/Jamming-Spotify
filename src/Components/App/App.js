@@ -92,9 +92,8 @@ class App extends React.Component {
       <div>
         <h1>Ja<span className="highlight">mmm</span>ing</h1>
         <div className="App">
-          <div style={{padding: '10px'}}></div>
         <div className="intro">
-          <p>Hi, so this app doesn't work unless I add you to authorized users as per the rules of using the Spotify API. Contact me if you wanna test this out.</p>
+          <p>Hi, so this app doesn't work unless I add you as an authorized users as per the rules of using the Spotify API. Contact me if you wanna test this out.</p>
         </div>
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">
