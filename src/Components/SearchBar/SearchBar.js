@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
                         this.search();
                     }
                 }}/>
-                <button onClick={this.search} className="SearchButton">SEARCH</button>
+                <button onClick={this.search} className="SearchButton">SEARCH SPOTIFY</button>
             </div>
         )
     }

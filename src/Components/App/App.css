@@ -65,3 +65,7 @@ h2 {
   background-color: rgba(1, 12, 63, 0.7);
   border-radius: 3px;
 }
+
+a {
+  text-decoration: none;
+}

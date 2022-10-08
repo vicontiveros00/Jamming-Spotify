@@ -93,7 +93,7 @@ class App extends React.Component {
         <h1>Ja<span className="highlight">mmm</span>ing</h1>
         <div className="App">
         <div className="intro">
-          <p>Hi, so this app doesn't work unless I add you as an authorized users as per the rules of using the Spotify API. Contact me if you wanna test this out.</p>
+          <p>Hi, so this app doesn't work unless I add you as an authorized user as per the rules of using the Spotify API. Contact me if you wanna test this out.</p>
         </div>
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">
@@ -101,7 +101,7 @@ class App extends React.Component {
             <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist} />
           </div>
         </div>
-        <p className="watermark">github.com/vicontiveros00/</p>
+        <a href="https://github.com/vicontiveros00"><p className="watermark">github.com/vicontiveros00/</p></a>
       </div>
     )
   }
