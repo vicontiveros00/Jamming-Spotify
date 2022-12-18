@@ -93,7 +93,7 @@ class App extends React.Component {
         <h1>Ja<span className="highlight">mmm</span>ing</h1>
         <div className="App">
         <div className="intro">
-          <p>Hi, so this app doesn't work unless I add you as an authorized user as per the rules of using the Spotify API. Contact me if you wanna test this out.</p>
+          <p>Check Readme file if this isn't working for you!</p>
         </div>
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">

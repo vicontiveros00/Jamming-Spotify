@@ -1,6 +1,6 @@
 let accessToken;
-const clientID = ''; //spotify api key goes here
-const redirectURI = 'https://jammmingvic.surge.sh/'
+const clientID = process.env.REACT_APP_API_KEY; //spotify api key goes here
+const redirectURI = process.env.REACT_APP_REDIRECT || 'http://localhost:3000/';
 const url = 'https://api.spotify.com/v1/';
 
 

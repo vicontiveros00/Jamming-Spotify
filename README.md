@@ -1,3 +1,5 @@
+**Contact me if you wanna become an authorized user, this app is useful for making playlists on the fly. I have to add you manually as a user per rules of the Spotify API.**
+
 # ♫ Jammming Playlist Maker ♫
 
 Live version here: https://jammmingvic.surge.sh/<br>
